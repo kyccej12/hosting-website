@@ -2,7 +2,7 @@ import Menu from "./menu";
 
 export default function Header() {
     return (
-      <div className="h-[600px] bg-gradient-to-br from-pink-600 to-purple-900 text-white font-sans relative">
+      <div className="md:bg-top h-[600px] bg-gradient-to-br from-pink-600 to-purple-900 text-white font-sans relative">
         {/* Navigation */}
         <nav className="flex justify-between items-center px-10 py-4">
           <div className="flex items-center justify-center space-x-2 p-4">
