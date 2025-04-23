@@ -20,7 +20,7 @@ const Menu = () => {
     <div className="relative z-50">
       {/* Mobile menu button */}
       <button onClick={toggleMenu} className="md:hidden p-2 z-50 relative">
-        {isOpen ? <CloseIcon size={24} /> : <MenuIcon size={24} />}
+        {isOpen ? <CloseIcon size={24} className="text-black"/> : <MenuIcon size={24} />}
       </button>
 
       {/* Desktop Nav */}
@@ -48,7 +48,7 @@ const Menu = () => {
           animate={{ y: 0, opacity: 1 }}
           exit={{ y: "-100%", opacity: 0 }}
           transition={{ duration: 0.3, ease: "easeOut" }}
-          className="fixed top-0 left-0 w-full h-[370px] bg-[#fafcfd] text-gray-900 z-10 flex flex-col items-center justify-start pt-20 px-6 md:hidden"
+          className="fixed top-0 left-0 w-full h-[370px] bg-gray-50 text-gray-900 z-10 flex flex-col items-center justify-start pt-20 px-6 md:hidden"
         >
           <ul className="space-y-6 text-lg w-full text-center">
             {menuItems.map(({ label, path }) => (
